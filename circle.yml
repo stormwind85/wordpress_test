@@ -1,0 +1,15 @@
+machine:
+  timezone:
+    Europe/France
+
+php:
+  version:
+    5.6.5
+
+environnement:
+  WP_VERSION: latest
+  CIRCLE_ENV: test
+
+dependencies:
+  test:
+    - casperjs test tests/
